@@ -1,13 +1,21 @@
 $(document).ready(function() {
   new WOW().init();
 
-  $(".dropdown__header").on("click", function(e) {
-    e.preventDefault();
-    $(this)
-      .parent()
-      .toggleClass("dropdown_open");
-  });
+  /* 
+    Выпадающее меню
+  */
+  (function() {
+    $(".dropdown__header").on("click", function(e) {
+      e.preventDefault();
+      $(this)
+        .parent()
+        .toggleClass("dropdown_open");
+    });
+  })();
 
+  /* 
+    Шапка сайта при прокрутке
+  */
   (function() {
     function headerToScroll() {
       if (
@@ -23,6 +31,9 @@ $(document).ready(function() {
     $(window).scroll(headerToScroll);
   })();
 
+  /* 
+    Мобильная шапка сайта при прокрутке
+  */
   (function() {
     function headerToScroll() {
       if (
@@ -38,43 +49,65 @@ $(document).ready(function() {
     $(window).scroll(headerToScroll);
   })();
 
-  new WOW({
-    boxClass: "exce__circle",
-    animateClass: "exce__circle_show",
-    offset: 0,
-    mobile: true,
-    live: true
-  }).init();
+  /* 
+    Анимания кругов
+  */
+  (function() {
+    new WOW({
+      boxClass: "exce__circle",
+      animateClass: "exce__circle_show",
+      offset: 0,
+      mobile: true,
+      live: true
+    }).init();
+  })();
 
-  $("[data-fancybox]").fancybox({
-    hash: false
-  });
+  /* 
+    FancyBox
+  */
+  (function() {
+    $("[data-fancybox]").fancybox({
+      hash: false
+    });
+  })();
 
-  $(".mobheader__menu").on("click", function(e) {
-    e.preventDefault();
-    $(".mobmenu").slideToggle();
-  });
+  /* 
+    Мобильное меню
+  */
+  (function() {
+    $(".mobheader__menu").on("click", function(e) {
+      e.preventDefault();
+      $(".mobmenu").slideToggle();
+    });
 
-  $(".mobmenu__item > a").on("click", function(e) {
-    e.preventDefault();
-    $(".mobmenu").slideUp();
-  });
+    $(".mobmenu__item > a").on("click", function(e) {
+      e.preventDefault();
+      $(".mobmenu").slideUp();
+    });
+  })();
 
-  var mySwiper = new Swiper("#reviews-slider", {
-    loop: true,
-    navigation: {
-      nextEl: ".slider-reviews__next",
-      prevEl: ".slider-reviews__back"
-    }
-  });
+  /* 
+    Настройка слайдеров
+  */
+  (function() {
+    // Отзывы
+    new Swiper("#reviews-slider", {
+      loop: true,
+      navigation: {
+        nextEl: ".slider-reviews__next",
+        prevEl: ".slider-reviews__back"
+      }
+    });
 
-  var mySwiper2 = new Swiper("#team-slider", {
-    loop: true,
-    navigation: {
-      nextEl: ".team-slider__next",
-      prevEl: ".team-slider__back"
-    }
-  });
+    // Команда
+    new Swiper("#team-slider", {
+      loop: true,
+      navigation: {
+        nextEl: ".team-slider__next",
+        prevEl: ".team-slider__back"
+      }
+    });
+  })();
 
   /* 
     Плавная прокрутка от элемента [data-scrollto="id"] к id
