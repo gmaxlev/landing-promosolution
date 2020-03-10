@@ -1,0 +1,48 @@
+.mobheader {
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1000;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.5s;
+  .header__logo-white {
+    display: none;
+  }
+}
+
+.mobheader__logo {
+  & > img {
+    max-width: 50px;
+  }
+}
+
+.mobheader__menu {
+  cursor: pointer;
+  & > .svg-sprite {
+    transition: fill 0.5s;
+    fill: $color-g;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.mobheader_scroll {
+  background-color: $color-c;
+  .header__logo-white {
+    display: block;
+  }
+  .header__logo-black {
+    display: none;
+  }
+  .mobheader__menu {
+    & > .svg-sprite {
+      fill: #fff;
+    }
+  }
+}

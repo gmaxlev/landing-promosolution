@@ -1,0 +1,121 @@
+@keyframes intro-show {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: $color-b;
+  }
+}
+
+.intro {
+  animation: intro-show 2s;
+  animation-fill-mode: forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: calc(44.191%);
+  }
+}
+
+.intro__img {
+  margin-bottom: 7.4%;
+  & > img {
+    max-width: 100%;
+  }
+}
+
+.intro__content {
+  width: 35%;
+  text-align: center;
+  position: relative;
+  @include media-breakpoint-down(sm) {
+    top: -15px;
+  }
+}
+
+.intro__header {
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+  }
+  & > img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.intro__left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 32%;
+  & > img {
+    position: absolute;
+    &:nth-child(1) {
+      bottom: -46%;
+      left: 0;
+      width: 77%;
+    }
+    &:nth-child(2) {
+      top: 53%;
+      left: 45%;
+      width: 50%;
+    }
+    &:nth-child(3) {
+      top: 8%;
+      left: 0;
+      width: 55%;
+    }
+    &:nth-child(4) {
+      top: -3%;
+      left: 32%;
+      width: 68%;
+    }
+  }
+}
+
+.intro__right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 38%;
+  & > img {
+    position: absolute;
+    &:nth-child(1) {
+      top: 0%;
+      right: 37%;
+      width: 77%;
+    }
+    &:nth-child(2) {
+      top: -2%;
+      right: 0;
+      width: 50%;
+    }
+    &:nth-child(3) {
+      top: 37%;
+      right: 22%;
+      width: 31%;
+    }
+    &:nth-child(4) {
+      bottom: 1%;
+      right: 0;
+      width: 46%;
+    }
+    &:nth-child(5) {
+      bottom: -40%;
+      right: 0%;
+      width: 82%;
+    }
+  }
+}

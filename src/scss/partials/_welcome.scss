@@ -1,0 +1,20 @@
+.welcome {
+  text-align: center;
+  margin-top: 62px;
+  .button {
+    max-width: 370px;
+    width: 100%;
+  }
+}
+
+.welcome__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 61px;
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 1.5rem;
+  }
+}

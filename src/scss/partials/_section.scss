@@ -1,0 +1,10 @@
+.section {
+  padding: 113px 0;
+  @include media-breakpoint-down(xs) {
+    padding: 50px 0;
+  }
+}
+
+.section_accent {
+  background-color: $color-d;
+}

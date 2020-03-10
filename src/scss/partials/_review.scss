@@ -1,0 +1,64 @@
+.review {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 0 90px;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: transparentize($color: $color-g, $amount: 0.47);
+  }
+}
+
+.review__content {
+  height: 539px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.review__text {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  margin-bottom: 40px;
+}
+
+.review__author {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  & > span {
+    &:first-child {
+      margin-right: 30px;
+      color: #fff;
+      position: relative;
+      &::after {
+        content: "";
+        width: 1px;
+        height: 27px;
+        background-color: $color-j;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -15px;
+      }
+    }
+    &:last-child {
+      color: #000;
+      color: $color-i;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.mission {
+  font-size: 1.125rem;
+  text-align: center;
+  max-width: 915px;
+  margin: 0 auto;
+  line-height: 2.25rem;
+  & > p {
+    margin-bottom: 38px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

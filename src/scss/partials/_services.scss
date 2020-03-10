@@ -1,0 +1,113 @@
+.services {
+  display: flex;
+  margin-top: 77px;
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+  }
+  @include media-breakpoint-down(xs) {
+    margin-top: 50px;
+  }
+}
+
+.services__item {
+  width: 25%;
+  margin-right: 30px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  transition: color 0.5s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include media-breakpoint-down(sm) {
+    width: calc(50% - 15px);
+    margin-bottom: 30px;
+    &:nth-child(even) {
+      margin-right: 0 !important;
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: $color-h;
+    &::after {
+      background-color: transparentize($color: #fff, $amount: 0.2);
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: background-color 0.5s;
+    background-color: transparentize($color: $color-g, $amount: 0.47);
+    z-index: 1;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.services__img {
+  & > img {
+    height: 68px;
+    max-width: 100%;
+  }
+}
+
+.services__name {
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  text-transform: uppercase;
+  margin: 52px 0 0 0;
+  @include media-breakpoint-down(md) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-down(sm) {
+    font-size: 1.5rem;
+  }
+}
+
+.services__about {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  @include media-breakpoint-down(md) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint-down(xs) {
+    font-size: 1.125rem;
+  }
+}
+
+.services__content {
+  position: relative;
+  z-index: 2;
+  padding: 65px 20px 45px;
+  box-sizing: border-box;
+  height: 100%;
+  @include media-breakpoint-down(md) {
+    padding: 65px 10px 45px;
+  }
+}
+
+.services__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services__header {
+  margin-bottom: 10px;
+}
+
+.services__gallery {
+  display: none;
+}

@@ -12,7 +12,7 @@ html(lang="ru")
         title Title
 
         // ===============
-        // Стили и скрипты
+        // СТИЛИ И СКРИПТЫ
         // ===============
         link(rel="stylesheet", href="css/main.css")
         script(src="js/jquery.min.js")
@@ -46,4 +46,325 @@ html(lang="ru")
 
     body
 
-        
+        .mobmenu
+            ul.mobmenu__list
+                li.mobmenu__item
+                    a(href="" data-scrollto="section-about-us") О нас
+                li.mobmenu__item
+                    a(href="" data-scrollto="section-edge") Преимущества
+                li.mobmenu__item
+                    a(href="" data-scrollto="section-services") Услуги
+                li.mobmenu__item
+                    a(href="" data-scrollto="section-clients") Клиенты
+                li.mobmenu__item
+                    a(href="" data-scrollto="section-team") Команда
+                li.mobmenu__item
+                    a(href="" data-scrollto="section-mission") Миссия
+                li.mobmenu__item
+                    a(href="" data-scrollto="section-footer") Контакты
+            .mobmenu__langs
+                a(href="").mobmenu__langs_current UKR
+                a(href="") RUS
+                a(href="") ENG
+
+        .mobheader
+            .mobheader__logo
+                img(src="img/logo-white.png", alt="").header__logo-white
+                img(src="img/logo.png", alt="").header__logo-black
+            .mobheader__menu
+                +svg-sprite('menu', 'svg-sprite')
+        .wrapper
+
+            // ======
+            // HEADER
+            // ======
+            header.header
+                .big-container.header__content
+                    .header__logo
+                        img(src="img/logo.png", alt="").header__logo-black
+                        img(src="img/logo-white.png", alt="").header__logo-white
+                    nav.header__nav
+                        ul.nav
+                            li.nav__item
+                                a(href="" data-scrollto="section-about-us") О нас
+                            li.nav__item
+                                a(href="" data-scrollto="section-edge") Преимущества
+                            li.nav__item
+                                a(href="" data-scrollto="section-services") Услуги
+                            li.nav__item
+                                a(href="" data-scrollto="section-clients") Клиенты
+                            li.nav__item
+                                a(href="" data-scrollto="section-team") Команда
+                            li.nav__item
+                                a(href="" data-scrollto="section-mission") Миссия
+                            li.nav__item
+                                a(href="" data-scrollto="section-footer") Контакты
+                    .header__langs
+                        .dropdown
+                            .dropdown__header
+                                span UKR
+                                +svg-sprite('arrow-down', 'svg-sprite')
+                            ul.dropdown__list
+                                li.dropdown__item
+                                    a(href="") RUS
+                                li.dropdown__item
+                                    a(href="") ENG
+            
+            // ===========
+            // ПРИВЕТСТВИЕ
+            // ===========
+            section.intro
+                .intro__left
+                    img(src="img/intro/1.png", alt="", data-wow-delay="0.1s").wow.rotateInUpRight
+                    img(src="img/intro/2.png", alt="", data-wow-delay="0.3s").wow.rollIn
+                    img(src="img/intro/3.png", alt="", data-wow-delay="0.5s").wow.fadeInLeft
+                    img(src="img/intro/4.png", alt="", data-wow-delay="0.7s").wow.rotateInDownRight
+                .intro__right
+                    img(src="img/intro/5.png", alt="", data-wow-delay="0.1s").wow.rotateInDownLeft
+                    img(src="img/intro/6.png", alt="", data-wow-delay="0.3s").wow.rotateInDownRight
+                    img(src="img/intro/7.png", alt="", data-wow-delay="0.5s").wow.bounceInDown
+                    img(src="img/intro/8.png", alt="", data-wow-delay="0.7s").wow.rotateInUpLeft
+                    img(src="img/intro/9.png", alt="", data-wow-delay="0.9s").wow.rotateInUpRight
+                .intro__content
+                    .intro__img.wow.fadeInUp(data-wow-delay="1s")
+                        img(src="img/logo-big.png", alt="")
+                    .intro__header.wow.fadeInUp(data-wow-delay="1.5s")
+                        img(src="img/about-us.svg", alt="")
+
+            // =====
+            // О НАС
+            // =====
+            .container#section-about-us
+                section.section
+                    h2.section-header.wow.fadeInUp <span>О</span> нас
+                    .section-subheader(data-wow-delay="0.3s").wow.fadeInUp Мы — команда профессионалов с многолетним опытом в разработке дизайна, создании креативной сувенирной и полиграфической продукции. <br>Наша задача — воплотить самые нестандартные идеи в рекламный продукт, обеспечив эстетическую красоту, высокое качество и первоклассный сервис работы
+                    .exce
+                        .exce__item
+                            .exce__header 
+                                span(data-wow-delay="0.5s").wow.fadeIn 8
+                                .exce__circle(data-wow-delay="0.5s")
+                            .exce__name.wow.fadeInUp(data-wow-delay="0.5s") лет <br>на рынке
+                        .exce__item
+                            .exce__header 
+                                span(data-wow-delay="1s").wow.fadeIn 25
+                                .exce__circle(data-wow-delay="1s")
+                            .exce__name.wow.fadeInUp(data-wow-delay="1s") отечественных <br>и зарубежных партнеров
+                        .exce__item
+                            .exce__header 
+                                span(data-wow-delay="1.5s").wow.fadeIn 1000
+                                .exce__circle(data-wow-delay="1.5s")
+                            .exce__name.wow.fadeInUp(data-wow-delay="1.5s") успешных <br>проектов
+                        .exce__item
+                            .exce__header 
+                                span(data-wow-delay="2s").wow.fadeIn 100%
+                                .exce__circle(data-wow-delay="2s")
+                            .exce__name.wow.fadeInUp(data-wow-delay="2s") довольных <br>клиентов
+
+            // ===========
+            // НАША МИССИЯ
+            // ===========
+            section.section.section_accent#section-mission
+                .container
+                    h2.section-header.wow.fadeInUp <span>Наша</span> миссия
+                    .mission
+                        p(data-wow-delay="0.3s").wow.fadeInUp В эпоху, когда миром правят информация и деньги, мы создаем новое пространство для бизнеса, собирая в команду людей, готовых развивать свои таланты, творить, расти профессионально и благодаря своей уникальности достигать финансового успеха
+                        p(data-wow-delay="0.5s").wow.fadeInUp Наша миссия — нести красоту и радость людям, <br>вкладывая позитивную энергию в создаваемый нами продукт! 
+            
+            // =================
+            // НАШИ ПРЕИМУЩЕСТВА
+            // =================
+            .container#section-edge
+                section.section
+                    h2.section-header.wow.fadeInUp <span>Наши</span> преимущества
+                    .edge
+                        .edge__item.wow.fadeInLeft(data-wow-delay="0s")
+                            .edge__num 1
+                            .edge__name.wow.fadeInUp(data-wow-delay="0s") Креативная
+                            .edge__about.wow.fadeInUp(data-wow-delay="0.2s") команда
+                        .edge__item.wow.fadeInLeft(data-wow-delay="0.7s")
+                            .edge__num 2
+                            .edge__name.wow.fadeInUp(data-wow-delay="0.7s") Огромный опыт
+                            .edge__about.wow.fadeInUp(data-wow-delay="0.9s") рекламных проектов <br>«под ключ»
+                        .edge__item.wow.fadeInLeft(data-wow-delay="1.4s")
+                            .edge__num 3
+                            .edge__name.wow.fadeInUp(data-wow-delay="1.4s") Высокое качество
+                            .edge__about.wow.fadeInUp(data-wow-delay="1.6s") продукции <br>и клиентского сервиса
+            
+            // ===========
+            // НАШИ УСЛУГИ
+            // ===========
+            section.section.section_accent#section-services
+                .container
+                    h2.section-header.wow.fadeInUp <span>Наши</span> услуги
+                    .services
+                        a(href="img/image1-825x460.jpg" data-caption="Описание изображения" data-fancybox="gallery-1" style="background-image: url(img/services/1.png)" data-wow-delay="0s").services__item.wow.fadeInUp
+                            .services__content
+                                .services__header
+                                    .services__img
+                                        img(src="img/icons8_design_90px.png", alt="")
+                                    .services__name Graphic Design
+                                .services__about Разработка идеи <br>и создание <br>графического <br>визуального дизайна
+                        a(href="img/image1-825x460.jpg" data-caption="Описание изображения" data-fancybox="gallery-2" style="background-image: url(img/services/2.png)" data-wow-delay="0.2s").services__item.wow.fadeInUp
+                            .services__content
+                                .services__header
+                                    .services__img
+                                        img(src="img/icons8_print_90px.png", alt="")
+                                    .services__name Printing
+                                .services__about Разработка дизайна <br>и печать <br>полиграфической <br>продукции
+                        a(href="img/image1-825x460.jpg" data-caption="Описание изображения" data-fancybox="gallery-3" style="background-image: url(img/services/3.png)" data-wow-delay="0.4s").services__item.wow.fadeInUp
+                            .services__content
+                                .services__header
+                                    .services__img
+                                        img(src="img/icons8_espresso_cup_90px.png", alt="")
+                                    .services__name Gifts
+                                .services__about Разработка <br>и производство <br>сувенирной <br>продукции
+                        a(href="img/image1-825x460.jpg" data-caption="Описание изображения" data-fancybox="gallery-4" style="background-image: url(img/services/4.png)" data-wow-delay="0.6s").services__item.wow.fadeInUp
+                            .services__content
+                                .services__header
+                                    .services__img
+                                        img(src="img/icons8_video_playlist_90px.png", alt="")
+                                    .services__name Video Production 
+                                .services__about Разработка сценария <br>и создание <br>профессионального <br>рекламного видео 
+                    .services__gallery
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-1" data-caption="Описание изображения")
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-1" data-caption="Описание изображения")
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-1" data-caption="Описание изображения")
+                    .services__gallery
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-2" data-caption="Описание изображения")
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-2" data-caption="Описание изображения")
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-2" data-caption="Описание изображения")
+                    .services__gallery
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-3" data-caption="Описание изображения")
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-3" data-caption="Описание изображения")
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-3" data-caption="Описание изображения")
+                    .services__gallery
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-4" data-caption="Описание изображения")
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-4" data-caption="Описание изображения")
+                        a(href="img/image1-825x460.jpg" data-fancybox="gallery-4" data-caption="Описание изображения")
+
+            // ============
+            // НАШИ КЛИЕНТЫ
+            // ============
+            .container#section-clients
+                section.section
+                    h2.section-header.wow.fadeInUp <span>Наши</span> клиенты
+                    .clients
+                        .clients__logos.wow.fadeInLeft
+                            .logos
+                                .logos__item
+                                    img(src="img/logos/Acino.png", alt="")
+                                .logos__item
+                                    img(src="img/logos/Adamed.png", alt="")
+                                .logos__item
+                                    img(src="img/logos/Boehringer.png", alt="")
+                                .logos__item
+                                    img(src="img/logos/Egis.png", alt="")
+                        .clients__slider.wow.fadeInRight
+                            .slider-reviews
+                                .slider-reviews__bl
+                                .slider-reviews__br
+                                .swiper-container#reviews-slider
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            .review(style="background-image: url(img/review.png)")
+                                                .review__content
+                                                    .review__text Мы команда профессионалов с <br>многолетним опытом работы в <br>сфере создания креативной сувенирной <br>и печатной продукции В нашей компании <br>вы подчеркнули неповторимость <br>своей компании.
+                                                    .review__author
+                                                        span Александр
+                                                        span Ген директор
+                                        .swiper-slide
+                                            .review(style="background-image: url(img/review.png)")
+                                                .review__content
+                                                    .review__text Мы команда профессионалов с <br>многолетним опытом работы в <br>сфере создания креативной сувенирной <br>и печатной продукции В нашей компании <br>вы подчеркнули неповторимость <br>своей компании.
+                                                    .review__author
+                                                        span Александр
+                                                        span Ген директор
+                                        .swiper-slide
+                                            .review(style="background-image: url(img/review.png)")
+                                                .review__content
+                                                    .review__text Мы команда профессионалов с <br>многолетним опытом работы в <br>сфере создания креативной сувенирной <br>и печатной продукции В нашей компании <br>вы подчеркнули неповторимость <br>своей компании.
+                                                    .review__author
+                                                        span Александр
+                                                        span Ген директор
+                                        .swiper-slide
+                                            .review(style="background-image: url(img/review.png)")
+                                                .review__content
+                                                    .review__text Мы команда профессионалов с <br>многолетним опытом работы в <br>сфере создания креативной сувенирной <br>и печатной продукции В нашей компании <br>вы подчеркнули неповторимость <br>своей компании.
+                                                    .review__author
+                                                        span Александр
+                                                        span Ген директор
+                                        .swiper-slide
+                                            .review(style="background-image: url(img/review.png)")
+                                                .review__content
+                                                    .review__text Мы команда профессионалов с <br>многолетним опытом работы в <br>сфере создания креативной сувенирной <br>и печатной продукции В нашей компании <br>вы подчеркнули неповторимость <br>своей компании.
+                                                    .review__author
+                                                        span Александр
+                                                        span Ген директор
+                                    .slider-reviews__back
+                                    .slider-reviews__next
+            
+            // =============
+            // НАШИ ПАРТНЕРЫ
+            // =============
+            section.section.section_accent
+                .container
+                    h2.section-header.wow.fadeInUp <span>Наши</span> партнеры
+                    .partners
+                        .partners__item.wow.fadeInLeft
+                            .partners__logo
+                                img(src="img/promostand-indoor.png", alt="")
+                            .partners__about Размещение рекламы в бизнес-центрах, жилых комплексах, ВУЗах, фитнес-центрах
+                            a(href="").button.button_a Перейти на сайт
+                        .partners__item.wow.fadeInRight
+                            .partners__logo
+                                img(src="img/promostand-indoor.png", alt="")
+                            .partners__about Размещение рекламы в бизнес-центрах, жилых комплексах, ВУЗах, фитнес-центрах
+                            a(href="").button.button_a Перейти на сайт
+
+            // ============
+            // НАША КОМАНДА
+            // ============
+            .container#section-team
+                section.section
+                    h2.section-header.wow.fadeInUp <span>Наша</span> команда
+                    .team-slider.wow.fadeIn
+                        .swiper-container#team-slider
+                            .swiper-wrapper
+                                a(href="img/team.png" data-fancybox="gallery-team").swiper-slide
+                                    img(src="img/team.png", alt="")
+                                a(href="img/team.png" data-fancybox="gallery-team").swiper-slide
+                                    img(src="img/team.png", alt="")
+                                a(href="img/team.png" data-fancybox="gallery-team").swiper-slide
+                                    img(src="img/team.png", alt="")
+                                a(href="img/team.png" data-fancybox="gallery-team").swiper-slide
+                                    img(src="img/team.png", alt="")
+                            .team-slider__back
+                            .team-slider__next
+                    .welcome
+                        .welcome__title Присоединяйтесь к нашей команде профессионалов
+                        a(href="").button.button_b Посмотреть вакансии
+            
+            footer.footer#section-footer
+                .container
+                    .footer__content
+                        .footer__logo
+                            img(src="img/logo-white.png", alt="")
+                        ul.footer__contacts
+                            li
+                                +svg-sprite('map-marker', 'svg-sprite')
+                                span Киев, ул. Ямская, 35/34
+                            li
+                                +svg-sprite('phone', 'svg-sprite')
+                                a(href="tel:0973332997") +38 (097) 333 29 97
+                        .footer__emails
+                            .mailer
+                                +svg-sprite('email', 'svg-sprite')
+                                .mailer__list
+                                    a(href="mailto:info@promosolution.kiev.ua") info@promosolution.kiev.ua
+                                    br
+                                    a(href="mailto:sales@promosolution.kiev.ua") sales@promosolution.kiev.ua
+                                    br
+                                    a(href="mailto:job@promosolution.kiev.ua") job@promosolution.kiev.ua
+                                
+        script(src="js/swiper.min.js")
+        script(src="js/main.js")

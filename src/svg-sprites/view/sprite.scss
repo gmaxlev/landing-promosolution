@@ -2,83 +2,53 @@
 	background: url("svg/sprite.view.svg") no-repeat;
 }
 
-.svg-art_circle {
+.svg-arrow-down {
 	@extend %svg-common;
-	background-position: 99.91717171717171% 0;
+	background-position: 95.07217605578633% 68.16187913780549%;
 }
 
-.svg-art_circle-dims {
-	width: 421px;
-	height: 421px;
-}
-
-.svg-icon_arrow-down {
-	@extend %svg-common;
-	background-position: 49.75014413758806% 54.285996015492714%;
-}
-
-.svg-icon_arrow-down-dims {
+.svg-arrow-down-dims {
 	width: 451.847px;
 	height: 451.847px;
 }
 
-.svg-icon_arrow-next {
-	@extend %svg-common;
-	background-position: 54.828553682722585% 0;
-}
-
-.svg-icon_arrow-next-dims {
-	width: 477.18px;
-	height: 477.18px;
-}
-
-.svg-icon_arrow-prev {
-	@extend %svg-common;
-	background-position: 0 55.78435858883006%;
-}
-
-.svg-icon_arrow-prev-dims {
-	width: 477.18px;
-	height: 477.18px;
-}
-
-.svg-icon_close {
-	@extend %svg-common;
-	background-position: 98.80042749128536% 42.73287386189466%;
-}
-
-.svg-icon_close-dims {
-	width: 409.81px;
-	height: 409.81px;
-}
-
-.svg-icon_instagram {
-	@extend %svg-common;
-	background-position: 72.68038207200588% 61.770260223048325%;
-}
-
-.svg-icon_instagram-dims {
-	width: 50px;
-	height: 50px;
-}
-
-.svg-icon_instagram-2 {
+.svg-email {
 	@extend %svg-common;
 	background-position: 0 0;
 }
 
-.svg-icon_instagram-2-dims {
+.svg-email-dims {
+	width: 682.667px;
+	height: 520px;
+}
+
+.svg-map-marker {
+	@extend %svg-common;
+	background-position: 57.10171572727698% 0;
+}
+
+.svg-map-marker-dims {
+	width: 494.472px;
+	height: 682.665px;
+}
+
+.svg-menu {
+	@extend %svg-common;
+	background-position: 99.92691001697794% 0;
+}
+
+.svg-menu-dims {
 	width: 512px;
 	height: 512px;
 }
 
-.svg-icon_phone {
+.svg-phone {
 	@extend %svg-common;
-	background-position: 0 99.95048854668727%;
+	background-position: 0 99.93600252146223%;
 }
 
-.svg-icon_phone-dims {
-	width: 405.33px;
-	height: 405.33px;
+.svg-phone-dims {
+	width: 682.636px;
+	height: 682.667px;
 }
 
