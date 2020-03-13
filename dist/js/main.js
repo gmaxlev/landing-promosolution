@@ -110,6 +110,41 @@ $(document).ready(function() {
   })();
 
   /* 
+    Слайдер на первом экране
+  */
+  (function() {
+    // Цвета
+    var colors = ["#c71a78", "#009eaa", "#ff8400", "#ee1c24", "#8dc748"];
+    // Команда
+    new Swiper("#intro-slider", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        type: "bullets"
+      },
+      autoplay: {
+        delay: 3000
+      },
+      on: {
+        progress: function(progress) {
+          if (progress > 0.9 || (progress > 0.08 && progress < 0.25)) {
+            $(".intro").css("background-color", colors[0]);
+          } else if (progress > 0.25 && progress < 0.4) {
+            $(".intro").css("background-color", colors[1]);
+          } else if (progress > 0.4 && progress < 0.57) {
+            $(".intro").css("background-color", colors[2]);
+          } else if (progress > 0.57 && progress < 0.74) {
+            $(".intro").css("background-color", colors[3]);
+          } else if (progress < 0.9) {
+            $(".intro").css("background-color", colors[4]);
+          }
+        }
+      }
+    });
+  })();
+
+  /* 
     Плавная прокрутка от элемента [data-scrollto="id"] к id
   */
   (function() {

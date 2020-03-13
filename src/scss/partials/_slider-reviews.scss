@@ -50,9 +50,15 @@
 .slider-reviews__back {
   background-image: url(../img/arrow-left.png);
   left: 27px;
+  @include media-breakpoint-down(xs) {
+    left: 12px;
+  }
 }
 
 .slider-reviews__next {
   background-image: url(../img/arrow-right.png);
   right: 27px;
+  @include media-breakpoint-down(xs) {
+    right: 12px;
+  }
 }

@@ -120,22 +120,70 @@ html(lang="ru")
             // ПРИВЕТСТВИЕ
             // ===========
             section.intro
-                .intro__left
-                    img(src="img/intro/1.png", alt="", data-wow-delay="0.1s").wow.rotateInUpRight
-                    img(src="img/intro/2.png", alt="", data-wow-delay="0.3s").wow.rollIn
-                    img(src="img/intro/3.png", alt="", data-wow-delay="0.5s").wow.fadeInLeft
-                    img(src="img/intro/4.png", alt="", data-wow-delay="0.7s").wow.rotateInDownRight
-                .intro__right
-                    img(src="img/intro/5.png", alt="", data-wow-delay="0.1s").wow.rotateInDownLeft
-                    img(src="img/intro/6.png", alt="", data-wow-delay="0.3s").wow.rotateInDownRight
-                    img(src="img/intro/7.png", alt="", data-wow-delay="0.5s").wow.bounceInDown
-                    img(src="img/intro/8.png", alt="", data-wow-delay="0.7s").wow.rotateInUpLeft
-                    img(src="img/intro/9.png", alt="", data-wow-delay="0.9s").wow.rotateInUpRight
-                .intro__content
-                    .intro__img.wow.fadeInUp(data-wow-delay="1s")
-                        img(src="img/logo-big.png", alt="")
-                    .intro__header.wow.fadeInUp(data-wow-delay="1.5s")
-                        img(src="img/about-us.svg", alt="")
+                .intro-slider
+                    .swiper-container#intro-slider
+                        // Additional required wrapper
+                        .swiper-wrapper
+                            // Slides
+                            .swiper-slide
+                                .intro-slider__item
+                                    .intro-slider__bg.intro-slider__bg_desktop
+                                        .intro__left
+                                            img(src="img/intro/1.png", alt="", data-wow-delay="0.1s").wow.rotateInUpRight
+                                            img(src="img/intro/2.png", alt="", data-wow-delay="0.3s").wow.rollIn
+                                            img(src="img/intro/3.png", alt="", data-wow-delay="0.5s").wow.fadeInLeft
+                                            img(src="img/intro/4.png", alt="", data-wow-delay="0.7s").wow.rotateInDownRight
+                                        .intro__right
+                                            img(src="img/intro/5.png", alt="", data-wow-delay="0.1s").wow.rotateInDownLeft
+                                            img(src="img/intro/6.png", alt="", data-wow-delay="0.3s").wow.rotateInDownRight
+                                            img(src="img/intro/7.png", alt="", data-wow-delay="0.5s").wow.bounceInDown
+                                            img(src="img/intro/8.png", alt="", data-wow-delay="0.7s").wow.rotateInUpLeft
+                                            img(src="img/intro/9.png", alt="", data-wow-delay="0.9s").wow.rotateInUpRight
+                                    .intro-slider__bg.intro-slider__bg_mobile(style="background-image: url(img/unifarm_mobile.png)")
+                                    .intro__content
+                                        .intro__img
+                                            img(src="img/logo-big.png", alt="")
+                                        .intro__header
+                                            img(src="img/about-us.svg", alt="")
+                            .swiper-slide
+                                .intro-slider__item
+                                    .intro-slider__bg.intro-slider__bg_desktop(style="background-image: url(img/unifarm.png)")
+                                    .intro-slider__bg.intro-slider__bg_mobile(style="background-image: url(img/unifarm_mobile.png)")
+                                    .intro__content
+                                        .intro__img
+                                            img(src="img/logo-big.png", alt="")
+                                        .intro__header
+                                            img(src="img/about-us.svg", alt="")
+                            .swiper-slide
+                                .intro-slider__item
+                                    .intro-slider__bg.intro-slider__bg_desktop(style="background-image: url(img/ksantis.png)")
+                                    .intro-slider__bg.intro-slider__bg_mobile(style="background-image: url(img/ksantis_mobile.png)")
+                                    .intro__content
+                                        .intro__img
+                                            img(src="img/logo-big.png", alt="")
+                                        .intro__header
+                                            img(src="img/about-us.svg", alt="")
+                            .swiper-slide
+                                .intro-slider__item
+                                    .intro-slider__bg.intro-slider__bg_desktop(style="background-image: url(img/takeda.png)")
+                                    .intro-slider__bg.intro-slider__bg_mobile(style="background-image: url(img/takeda_mobile.png)")
+                                    .intro__content
+                                        .intro__img
+                                            img(src="img/logo-big.png", alt="")
+                                        .intro__header
+                                            img(src="img/about-us.svg", alt="")
+                            .swiper-slide
+                                .intro-slider__item
+                                    .intro-slider__bg.intro-slider__bg_desktop(style="background-image: url(img/biotehnos.png)")
+                                    .intro-slider__bg.intro-slider__bg_mobile(style="background-image: url(img/biotehnos_mobile.png)")
+                                    .intro__content
+                                        .intro__img
+                                            img(src="img/logo-big.png", alt="")
+                                        .intro__header
+                                            img(src="img/about-us.svg", alt="")
+                        // If we need pagination
+                        .swiper-pagination
+
 
             // =====
             // О НАС
@@ -173,7 +221,7 @@ html(lang="ru")
                 .container
                     h2.section-header.wow.fadeInUp <span>Наша</span> миссия
                     .mission
-                        p(data-wow-delay="0.3s").wow.fadeInUp В эпоху, когда миром правят информация и деньги, мы создаем новое пространство для бизнеса, собирая в команду людей, готовых развивать свои таланты, творить, расти профессионально и благодаря своей уникальности достигать финансового успеха
+                        p(data-wow-delay="0.3s").wow.fadeInUp В эпоху, когда миром правят информация и деньги, мы создаем новое пространство для бизнеса, собирая в команду людей, готовых развивать свои таланты, творить, расти профессионально <br>и благодаря своей уникальности достигать финансового успеха
                         p(data-wow-delay="0.5s").wow.fadeInUp Наша миссия — нести красоту и радость людям, <br>вкладывая позитивную энергию в создаваемый нами продукт! 
             
             // =================

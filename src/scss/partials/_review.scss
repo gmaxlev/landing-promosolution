@@ -5,7 +5,9 @@
   position: relative;
   padding: 0 90px;
   box-sizing: border-box;
-
+  @include media-breakpoint-down(xs) {
+    padding: 0 40px;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -33,6 +35,11 @@
   font-size: 1.125rem;
   line-height: 1.875rem;
   margin-bottom: 40px;
+  @include media-breakpoint-down(xs) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .review__author {

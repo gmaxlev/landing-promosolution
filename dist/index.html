@@ -96,11 +96,67 @@
         <!-- ПРИВЕТСТВИЕ-->
         <!-- ===========-->
         <section class="intro">
-            <div class="intro__left"><img class="wow rotateInUpRight" src="img/intro/1.png" alt="" data-wow-delay="0.1s" /><img class="wow rollIn" src="img/intro/2.png" alt="" data-wow-delay="0.3s" /><img class="wow fadeInLeft" src="img/intro/3.png" alt="" data-wow-delay="0.5s" /><img class="wow rotateInDownRight" src="img/intro/4.png" alt="" data-wow-delay="0.7s" /></div>
-            <div class="intro__right"><img class="wow rotateInDownLeft" src="img/intro/5.png" alt="" data-wow-delay="0.1s" /><img class="wow rotateInDownRight" src="img/intro/6.png" alt="" data-wow-delay="0.3s" /><img class="wow bounceInDown" src="img/intro/7.png" alt="" data-wow-delay="0.5s" /><img class="wow rotateInUpLeft" src="img/intro/8.png" alt="" data-wow-delay="0.7s" /><img class="wow rotateInUpRight" src="img/intro/9.png" alt="" data-wow-delay="0.9s" /></div>
-            <div class="intro__content">
-                <div class="intro__img wow fadeInUp" data-wow-delay="1s"><img src="img/logo-big.png" alt="" /></div>
-                <div class="intro__header wow fadeInUp" data-wow-delay="1.5s"><img src="img/about-us.svg" alt="" /></div>
+            <div class="intro-slider">
+                <div class="swiper-container" id="intro-slider">
+                    <!-- Additional required wrapper-->
+                    <div class="swiper-wrapper">
+                        <!-- Slides-->
+                        <div class="swiper-slide">
+                            <div class="intro-slider__item">
+                                <div class="intro-slider__bg intro-slider__bg_desktop">
+                                    <div class="intro__left"><img class="wow rotateInUpRight" src="img/intro/1.png" alt="" data-wow-delay="0.1s" /><img class="wow rollIn" src="img/intro/2.png" alt="" data-wow-delay="0.3s" /><img class="wow fadeInLeft" src="img/intro/3.png" alt="" data-wow-delay="0.5s" /><img class="wow rotateInDownRight" src="img/intro/4.png" alt="" data-wow-delay="0.7s" /></div>
+                                    <div class="intro__right"><img class="wow rotateInDownLeft" src="img/intro/5.png" alt="" data-wow-delay="0.1s" /><img class="wow rotateInDownRight" src="img/intro/6.png" alt="" data-wow-delay="0.3s" /><img class="wow bounceInDown" src="img/intro/7.png" alt="" data-wow-delay="0.5s" /><img class="wow rotateInUpLeft" src="img/intro/8.png" alt="" data-wow-delay="0.7s" /><img class="wow rotateInUpRight" src="img/intro/9.png" alt="" data-wow-delay="0.9s" /></div>
+                                </div>
+                                <div class="intro-slider__bg intro-slider__bg_mobile" style="background-image: url(img/unifarm_mobile.png)"></div>
+                                <div class="intro__content">
+                                    <div class="intro__img"><img src="img/logo-big.png" alt="" /></div>
+                                    <div class="intro__header"><img src="img/about-us.svg" alt="" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="intro-slider__item">
+                                <div class="intro-slider__bg intro-slider__bg_desktop" style="background-image: url(img/unifarm.png)"></div>
+                                <div class="intro-slider__bg intro-slider__bg_mobile" style="background-image: url(img/unifarm_mobile.png)"></div>
+                                <div class="intro__content">
+                                    <div class="intro__img"><img src="img/logo-big.png" alt="" /></div>
+                                    <div class="intro__header"><img src="img/about-us.svg" alt="" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="intro-slider__item">
+                                <div class="intro-slider__bg intro-slider__bg_desktop" style="background-image: url(img/ksantis.png)"></div>
+                                <div class="intro-slider__bg intro-slider__bg_mobile" style="background-image: url(img/ksantis_mobile.png)"></div>
+                                <div class="intro__content">
+                                    <div class="intro__img"><img src="img/logo-big.png" alt="" /></div>
+                                    <div class="intro__header"><img src="img/about-us.svg" alt="" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="intro-slider__item">
+                                <div class="intro-slider__bg intro-slider__bg_desktop" style="background-image: url(img/takeda.png)"></div>
+                                <div class="intro-slider__bg intro-slider__bg_mobile" style="background-image: url(img/takeda_mobile.png)"></div>
+                                <div class="intro__content">
+                                    <div class="intro__img"><img src="img/logo-big.png" alt="" /></div>
+                                    <div class="intro__header"><img src="img/about-us.svg" alt="" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="intro-slider__item">
+                                <div class="intro-slider__bg intro-slider__bg_desktop" style="background-image: url(img/biotehnos.png)"></div>
+                                <div class="intro-slider__bg intro-slider__bg_mobile" style="background-image: url(img/biotehnos_mobile.png)"></div>
+                                <div class="intro__content">
+                                    <div class="intro__img"><img src="img/logo-big.png" alt="" /></div>
+                                    <div class="intro__header"><img src="img/about-us.svg" alt="" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- If we need pagination-->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section><!-- =====-->
         <!-- О НАС-->
@@ -143,7 +199,7 @@
             <div class="container">
                 <h2 class="section-header wow fadeInUp"><span>Наша</span> миссия</h2>
                 <div class="mission">
-                    <p class="wow fadeInUp" data-wow-delay="0.3s">В эпоху, когда миром правят информация и деньги, мы создаем новое пространство для бизнеса, собирая в команду людей, готовых развивать свои таланты, творить, расти профессионально и благодаря своей уникальности достигать финансового успеха</p>
+                    <p class="wow fadeInUp" data-wow-delay="0.3s">В эпоху, когда миром правят информация и деньги, мы создаем новое пространство для бизнеса, собирая в команду людей, готовых развивать свои таланты, творить, расти профессионально <br>и благодаря своей уникальности достигать финансового успеха</p>
                     <p class="wow fadeInUp" data-wow-delay="0.5s">Наша миссия — нести красоту и радость людям, <br>вкладывая позитивную энергию в создаваемый нами продукт! </p>
                 </div>
             </div>

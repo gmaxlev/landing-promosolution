@@ -8,7 +8,7 @@
   z-index: 1000;
   transition: background-color 0.5s;
   @include media-breakpoint-down(sm) {
-    display: none;
+    display: none !important;
   }
   .header__logo-white {
     display: none;
