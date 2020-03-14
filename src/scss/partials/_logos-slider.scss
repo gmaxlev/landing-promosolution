@@ -1,0 +1,43 @@
+.logos-slider {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.logos-slider__bl,
+.logos-slider__br {
+  outline: none;
+  transform: translateX(50%);
+  z-index: 100;
+  cursor: pointer;
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 44px;
+  height: 30px;
+  background-color: #fff;
+  transition: background-color 0.5s;
+  right: 0;
+  @include media-breakpoint-down(sm) {
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    background-color: $color-l;
+  }
+}
+.logos-slider__bl {
+  background-image: url(../img/arrow-back.png);
+  top: 20px;
+  @include media-breakpoint-down(sm) {
+    left: 10px;
+  }
+}
+.logos-slider__br {
+  background-image: url(../img/arrow-next.png);
+  bottom: 20px;
+  @include media-breakpoint-down(sm) {
+    right: 10px;
+  }
+}

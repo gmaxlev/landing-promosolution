@@ -107,6 +107,15 @@ $(document).ready(function() {
         prevEl: ".team-slider__back"
       }
     });
+
+    // Логотипы клиентов
+    new Swiper("#brands-slider", {
+      loop: true,
+      navigation: {
+        nextEl: $(".logos-slider__br"),
+        prevEl: $(".logos-slider__bl")
+      }
+    });
   })();
 
   /* 

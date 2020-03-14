@@ -53,43 +53,53 @@
   & > img {
     position: absolute;
     &:nth-child(1) {
-      bottom: -46%;
-      left: 0;
-      width: 77%;
+      bottom: -13%;
+      left: -4%;
+      width: 85%;
       @include media-breakpoint-down(xs) {
-        bottom: -13%;
+        /*  bottom: -13%;
         left: -25%;
-        width: 179%;
+        width: 179%; */
       }
     }
     &:nth-child(2) {
-      top: 53%;
-      left: 45%;
-      width: 50%;
+      top: 61%;
+      left: 2%;
+      width: 56%;
       @include media-breakpoint-down(xs) {
-        top: 42%;
+        /* top: 42%;
         left: 3%;
-        width: 54%;
+        width: 54%; */
       }
     }
     &:nth-child(3) {
-      top: 8%;
-      left: 0;
-      width: 55%;
+      top: 49%;
+      left: -6%;
+      width: 64%;
       @include media-breakpoint-down(xs) {
-        top: 9%;
+        /* top: 9%;
         left: -5px;
-        width: 105%;
+        width: 105%; */
       }
     }
     &:nth-child(4) {
-      top: -3%;
-      left: 32%;
-      width: 68%;
+      top: 9%;
+      left: -26%;
+      width: 77%;
       @include media-breakpoint-down(xs) {
-        top: 6%;
+        /* top: 6%;
         left: 76%;
-        width: 100%;
+        width: 100%; */
+      }
+    }
+    &:nth-child(5) {
+      top: 10%;
+      left: 51%;
+      width: 43%;
+      @include media-breakpoint-down(xs) {
+        /* top: 6%;
+        left: 76%;
+        width: 100%; */
       }
     }
   }
@@ -104,53 +114,43 @@
   & > img {
     position: absolute;
     &:nth-child(1) {
-      top: 0%;
-      right: 37%;
-      width: 77%;
+      top: -7%;
+      right: -5%;
+      width: 62%;
       @include media-breakpoint-down(xs) {
-        top: 6%;
+        /* top: 6%;
         right: 91%;
-        width: 50%;
+        width: 50%; */
       }
     }
     &:nth-child(2) {
-      top: -2%;
-      right: 0;
-      width: 50%;
+      top: 36%;
+      right: 33%;
+      width: 37%;
       @include media-breakpoint-down(xs) {
-        top: 5%;
+        /* top: 5%;
         right: -12%;
-        width: 100%;
+        width: 100%; */
       }
     }
     &:nth-child(3) {
-      top: 37%;
-      right: 22%;
-      width: 31%;
+      top: 41%;
+      right: -4%;
+      width: 40%;
       @include media-breakpoint-down(xs) {
-        top: 41%;
+        /* top: 41%;
         right: 6%;
-        width: 45%;
+        width: 45%; */
       }
     }
     &:nth-child(4) {
-      bottom: 1%;
-      right: 0;
-      width: 46%;
+      bottom: -17%;
+      right: -3%;
+      width: 63%;
       @include media-breakpoint-down(xs) {
-        bottom: 21%;
+        /* bottom: 21%;
         right: -13%;
-        width: 80%;
-      }
-    }
-    &:nth-child(5) {
-      bottom: -40%;
-      right: 0%;
-      width: 82%;
-      @include media-breakpoint-down(xs) {
-        bottom: 2%;
-        right: -25%;
-        width: 135%;
+        width: 80%; */
       }
     }
   }
